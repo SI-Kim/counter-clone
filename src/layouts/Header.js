@@ -7,7 +7,7 @@ const Header = () => {
 
     return (
         <div className={classes.headerBox}>
-            Header
+            <p className={classes.headerTxt}>COUNTER & MEMO APP</p>
         </div>
     );
 }
@@ -15,11 +15,15 @@ const Header = () => {
 const useStyles = makeStyles((theme) => ({
     headerBox: {
         backgroundColor: "black",
-        color: "white",
-        margin: "0 auto",
-        overflow: "hidden",
-        height: "5%"
+        height: "5vh",
+        marginTop: "0"
     },
+    headerTxt: {
+        color: "white",
+        marginTop: "0",
+        paddingLeft: "5%",
+        paddingTop: "1%"
+    }
 }));
 
 export default Header;
