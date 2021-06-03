@@ -49,7 +49,7 @@ const Counter = () => {
             </Paper>
         </div>
     );
-}
+} 
 
 const useStyle = makeStyles((theme) => ({
     outterPaper: {
