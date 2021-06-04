@@ -4,7 +4,7 @@ import { makeStyles } from "@material-ui/styles";
 
 const Counter = () => {
   const classes = useStyle();
-  //////////
+  ////////////
   return (
     <div>
       <Paper className={classes.outterPaper}>
