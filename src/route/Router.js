@@ -1,13 +1,15 @@
 import React from "react";
-import { BrowserRouter, Route } from "react-router-dom";
+import { Route } from "react-router-dom";
 import { CounterContainer } from "../containers/index";
 
 const Router = () => {
   return (
-    <div style={{ height: "70vh" }}>
-      <BrowserRouter>
-        <Route path="/counter" component={CounterContainer} />
-      </BrowserRouter>
+    <div className="Router" style={{ height: "70vh" }}>
+      <Route
+        path="/counter"
+        component={CounterContainer}
+        style={{ height: "70vh" }}
+      />
     </div>
   );
 };
