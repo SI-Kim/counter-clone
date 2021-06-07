@@ -3,10 +3,8 @@ import Router from "../route/Router";
 
 const Main = () => {
   return (
-    <div className="Main">
-      <div className="route">
-        <Router />
-      </div>
+    <div className="Main" style={{ height: "70vh" }}>
+      <Router />
     </div>
   );
 };

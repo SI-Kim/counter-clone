@@ -4,7 +4,7 @@ import { CounterContainer } from "../containers/index";
 
 const Router = () => {
   return (
-    <div>
+    <div style={{ height: "70vh" }}>
       <BrowserRouter>
         <Route path="/counter" component={CounterContainer} />
       </BrowserRouter>
