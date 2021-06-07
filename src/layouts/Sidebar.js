@@ -18,7 +18,13 @@ const Sidebar = () => {
           className={classes.btn}
         />
       </Link>
-      <Button children="To do" variant="contained" className={classes.btn} />
+      <Link to="/todo">
+        <Button 
+          children="To do" 
+          variant="contained" 
+          className={classes.btn} 
+        />
+      </Link>
     </div>
   );
 };

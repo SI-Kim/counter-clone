@@ -1,6 +1,6 @@
 import React from "react";
 import { Route } from "react-router-dom";
-import { CounterContainer } from "../containers/index";
+import { CounterContainer, TodoContainer } from "../containers/index";
 
 const Router = () => {
   return (
@@ -8,6 +8,10 @@ const Router = () => {
       <Route
         path="/counter"
         component={CounterContainer}
+      />
+      <Route
+        path="/todo"
+        component={TodoContainer}
       />
     </div>
   );
