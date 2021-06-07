@@ -14,7 +14,7 @@ const Counter = ({ number, diff, onIncrease, onDecrease, onSetDiff }) => {
       <Paper className={classes.outterPaper}>
         <Paper className={classes.numberPaper}>
           <Grid item xs={12} container justify="center">
-            <h1 className={classes.numberH1}>0</h1>
+            <h1 className={classes.numberH1}>{number}</h1>
           </Grid>
         </Paper>
         <Grid container>
@@ -23,6 +23,8 @@ const Counter = ({ number, diff, onIncrease, onDecrease, onSetDiff }) => {
               className={classes.diffInput}
               type="number"
               variant="filled"
+              value={diff}
+              min="1"
               onChange={onChange}
             />
           </Grid>
@@ -30,12 +32,17 @@ const Counter = ({ number, diff, onIncrease, onDecrease, onSetDiff }) => {
             <Button
               style={{ marginBottom: "5%" }}
               variant="contained"
+              onClick={onIncrease}
               className={classes.buttons}
             >
               +
             </Button>
             <br />
-            <Button variant="contained" className={classes.buttons}>
+            <Button
+              variant="contained"
+              className={classes.buttons}
+              onClick={onDecrease}
+            >
               -
             </Button>
           </Grid>
