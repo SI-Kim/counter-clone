@@ -2,8 +2,12 @@ import React from "react";
 import { Paper, Grid, Button, Input } from "@material-ui/core";
 import { makeStyles } from "@material-ui/styles";
 
-const Counter = () => {
+const Counter = ({ number, diff, onIncrease, onDecrease, onSetDiff }) => {
   const classes = useStyle();
+
+  const onChange = (event) => {
+    onSetDiff(parseInt(event.target.value, 10));
+  };
 
   return (
     <div>
@@ -19,6 +23,7 @@ const Counter = () => {
               className={classes.diffInput}
               type="number"
               variant="filled"
+              onChange={onChange}
             />
           </Grid>
           <Grid item xs={6} sm={6}>
