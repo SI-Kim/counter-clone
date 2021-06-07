@@ -4,11 +4,10 @@ import { CounterContainer } from "../containers/index";
 
 const Router = () => {
   return (
-    <div className="Router" style={{ height: "70vh" }}>
+    <div className="Router" >
       <Route
         path="/counter"
         component={CounterContainer}
-        style={{ height: "70vh" }}
       />
     </div>
   );

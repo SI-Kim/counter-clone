@@ -6,7 +6,7 @@ const Main = () => {
   const classes = useStyle();
 
   return (
-    <div className="Main">
+    <div className={classes.Main}>
       <Router />
     </div>
   );
@@ -15,8 +15,8 @@ const Main = () => {
 const useStyle = makeStyles((theme) => ({
   Main: {
     height: "90vh",
-    width: "90vw",
-    float: "right"
+    width: "75vw",
+    float: "right",
   }
 }));
 
