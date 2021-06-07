@@ -28,7 +28,8 @@ const useStyle = makeStyles((theme) => ({
     width: "25vw",
     height: "90vh",
     backgroundColor: "grey",
-    textAlign: "center"
+    textAlign: "center",
+    float: "left"
   },
   btn: {
     margin: "8%",
