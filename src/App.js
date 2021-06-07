@@ -1,14 +1,13 @@
 import React from "react";
-import MainContainer from "./containers/MainContainer";
 import "./styles/index.css";
-import { Header, Footer, Sidebar } from "./layouts/index";
+import { Header, Footer, Sidebar, Main } from "./layouts/index";
 
 function App() {
   return (
     <div>
       <Header />
       <Sidebar />
-      <MainContainer />
+      <Main />
       <Footer />
     </div>
   );
