@@ -8,6 +8,9 @@ const Sidebar = () => {
 
   return (
     <div className={classes.sideBox}>
+      <Link to="/">
+        <Button children="Home" variant="contained" className={classes.btn} />
+      </Link>
       <Link to="/counter">
         <Button
           children="Counter"
